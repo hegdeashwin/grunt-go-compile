@@ -1,27 +1,27 @@
 {
   "name": "grunt-go-compile",
-  "description": "The best Grunt plugin ever.",
-  "version": "0.0.1",
-  "homepage": "https://github.com/hegdeashwin/Private",
+  "description": "Compile Go files.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hegdeashwin/grunt-go-compile",
   "author": {
     "name": "hegdeashwin",
     "email": "ashwin.hegde3@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hegdeashwin/Private.git"
+    "url": "https://github.com/hegdeashwin/grunt-go-compile.git"
   },
   "bugs": {
-    "url": "https://github.com/hegdeashwin/Private/issues"
+    "url": "https://github.com/hegdeashwin/grunt-go-compile/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/hegdeashwin/Private/blob/master/LICENSE-MIT"
+      "url": "https://raw.githubusercontent.com/hegdeashwin/grunt-go-compile/master/LICENSE"
     }
   ],
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.10.0"
   },
   "scripts": {
     "test": "grunt test"
@@ -36,6 +36,11 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "go",
+    "go-lang",
+    "compile",
+    "compile-rapper",
+    "go-rapper"
   ]
 }
