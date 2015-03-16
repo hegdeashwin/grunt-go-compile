@@ -1,7 +1,7 @@
 {
   "name": "grunt-go-compile",
   "description": "Compile Go files.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/hegdeashwin/grunt-go-compile",
   "author": {
     "name": "hegdeashwin",

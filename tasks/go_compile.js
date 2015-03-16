@@ -1,8 +1,8 @@
 /*
  * grunt-go-compile
- * https://github.com/hegdeashwin/Private
+ * https://github.com/hegdeashwin/grunt-go-compile
  *
- * Copyright (c) 2015 hegdeashwin
+ * Copyright (c) 2015 Ashwin Hegde
  * Licensed under the MIT license.
  */
 
