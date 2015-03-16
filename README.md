@@ -1,6 +1,6 @@
 # grunt-go-compile
 
-> The best Grunt plugin ever.
+> Compile Go files. [The plugin is under development.]
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
