@@ -8,17 +8,21 @@
 
 'use strict';
 
+var shell = require('shelljs');
+
 module.exports = function(grunt) {
 
 	// Please see the Grunt documentation for more information regarding task
 	// creation: http://gruntjs.com/creating-tasks
 
-	grunt.registerMultiTask('go_compile', 'The best Grunt plugin ever.', function() {
+	grunt.registerMultiTask('go_compile', 'Compile Go files.', function() {
 		// Merge task-specific and/or target-specific options with these defaults.
 		var options = this.options({
 			punctuation: '.',
 			separator: ', '
 		});
+
+		shell.echo('Welcome to Go Compile');
 
 		// Iterate over all specified file groups.
 		this.files.forEach(function(f) {
@@ -33,6 +37,7 @@ module.exports = function(grunt) {
 				}
 			}).map(function(filepath) {
 				// Read file source.
+				console.log("filepath: ", filepath);
 				return grunt.file.read(filepath);
 			}).join(grunt.util.normalizelf(options.separator));
 
