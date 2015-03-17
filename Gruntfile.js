@@ -24,14 +24,14 @@ module.exports = function(grunt) {
 		},
 
 		jscs: {
-            options: {
-                config: 'config/.jscsrc'
-            },
-            src: [
-            	'Gruntfile.js',
+			options: {
+				config: 'config/.jscsrc'
+			},
+			src: [
+				'Gruntfile.js',
 				'tasks/**/*.js'
-            ]
-        },
+			]
+		},
 
 		// Before generating any new files, remove any previously-created files.
 		clean: {
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 			default_options: {
 				options: {},
 				files: {
-					'tmp/HelloWorld.go': ['test/fixtures/HelloWorld.go']
+					'tmp/HelloWorld.go': 'test/fixtures/HelloWorld.go'
 				}
 			}
 		},
