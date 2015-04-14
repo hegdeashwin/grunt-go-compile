@@ -1,4 +1,4 @@
-# grunt-go-compile
+# grunt-go-compile [![GitHub version](http://img.shields.io/badge/version-0.0.2-brightgreen.svg)](https://github.com/hegdeashwin/grunt-go-compile/releases)
 
 > [The plugin is under development.]
 
@@ -87,5 +87,7 @@ We really appreciate all kind of contributions. Special thanks to <a href="//git
 To request a feature or you find any typo errors, enhancements or questions; please feel free to post it on following link, or vote for the ones that are already registered.
 <br>Tracking: <a href="https://github.com/hegdeashwin/grunt-go-compile/issues" target="_blank">https://github.com/hegdeashwin/grunt-go-compile/issues</a>
 
-## Release History
-_(Nothing yet)_
+## License
+
+The MIT License (MIT)
+Copyright (c) 2015 Ashwin Hegde
