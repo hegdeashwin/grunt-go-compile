@@ -17,19 +17,19 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-go-compile');
 ```
 
-## The "go_compile" task
+## The "go" task
 
 ### Overview
-In your project's Gruntfile, add a section named `go_compile` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `go` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  go_compile: {
-    default_options: {
+  go: {
+    compile: {
       options: {
         // Task-specific options go here.
       },
-      your_target: {
+      files: {
         // Target-specific file lists and/or options go here.
       }
     }    
@@ -49,8 +49,8 @@ A string value that is used to do something with whatever.
 
 ```js
 grunt.initConfig({
-  go_compile: {
-    default_options: {
+  go: {
+    compile: {
       options: {},
       files: {
         'tmp/HelloWorld.go': 'test/fixtures/HelloWorld.go'
@@ -64,7 +64,7 @@ grunt.initConfig({
 
 ```js
 grunt.initConfig({
-  go_compile: {
+  go: {
     options: {
       separator: ': '
     },
@@ -75,8 +75,15 @@ grunt.initConfig({
 });
 ```
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+## Author & Contributors
+
+Developed &amp; maintained by author: <b>Ashwin Hegde</b><br>
+Follow me at: <a href="https://github.com/hegdeashwin" target="_blank">github</a> | <a href="http://in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="https://twitter.com/hegdeashwin3" target="_blank">Twitter</a>
+
+We really appreciate all kind of contributions. Special thanks to <a href="//github.com/hegdeashwin/grunt-go-compile/graphs/contributors" target="_blank">contributors</a> for using and supporting grunt-go-compile.
+
+To request a feature or you find any typo errors, enhancements or questions; please feel free to post it on following link, or vote for the ones that are already registered.
+<br>Tracking: <a href="https://github.com/hegdeashwin/grunt-go-compile/issues" target="_blank">https://github.com/hegdeashwin/grunt-go-compile/issues</a>
 
 ## Release History
 _(Nothing yet)_
