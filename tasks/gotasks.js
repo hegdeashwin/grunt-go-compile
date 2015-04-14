@@ -12,16 +12,12 @@ var syncExec = require('shelljs').exec
 
 module.exports = function(grunt) {
 	grunt.registerMultiTask('go', 'Compile Go files', function() {
-		// Merge task-specific and/or target-specific options with these defaults.
 		var options = this.options({
 			separator: ', '
 		});
 
-		// Iterate over all specified file groups.
 		this.files.forEach(function(f) {
-			// Concat specified files.
 			var src = f.src.filter(function(filepath) {
-				// Warn on and remove invalid source files (if nonull was set).
 				if (!grunt.file.exists(filepath)) {
 					grunt.log.warn('Source file "' + filepath + '" not found.');
 					return false;
@@ -29,11 +25,8 @@ module.exports = function(grunt) {
 					return true;
 				}
 			}).map(function(filepath) {
-				// Read file source.
-				console.log("filepath: ", filepath);
 
-				var GO_RUN_CMD = "go run " + filepath;
-				out = syncExec(GO_RUN_CMD);
+				syncExec("go run " + filepath);
 
 				return grunt.file.read(filepath);
 			}).join(grunt.util.normalizelf(options.separator));
