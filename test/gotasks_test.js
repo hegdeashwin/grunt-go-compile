@@ -22,12 +22,12 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
-exports.go_compile = {
+exports.go = {
   setUp: function(done) {
     // setup here if necessary
     done();
   },
-  default_options: function(test) {
+  compile: function(test) {
     test.expect(1);
 
     var actual = grunt.file.read('tmp/default_options');
