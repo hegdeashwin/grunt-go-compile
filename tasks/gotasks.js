@@ -11,11 +11,7 @@
 var syncExec = require('shelljs').exec
 
 module.exports = function(grunt) {
-
-	// Please see the Grunt documentation for more information regarding task
-	// creation: http://gruntjs.com/creating-tasks
-
-	grunt.registerMultiTask('go_compile', 'Compile Go files.', function() {
+	grunt.registerMultiTask('go', 'Compile Go files', function() {
 		// Merge task-specific and/or target-specific options with these defaults.
 		var options = this.options({
 			separator: ', '
