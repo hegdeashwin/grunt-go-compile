@@ -2,7 +2,7 @@
 
 > [The plugin is under development.]
 
-The grunt-go-compile plugin give the you one of the way to provide Go files to actual Go compile to run and build in the form of grunt tasks.
+The grunt-go-compile plugin gives you one of the way to provide Go files to actual Go compile to run and build in the form of grunt tasks.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
